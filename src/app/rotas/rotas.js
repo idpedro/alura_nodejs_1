@@ -5,20 +5,6 @@ module.exports = (app)=>{
     // retorna a requisições GET  na rota '/'
     app.get("/",(req,resp)=>{
         resp.marko(require('../views/index/index.marko'));
-        // // var de retorno html
-        // let html=`
-        //     <html>
-        //         <head>
-        //             <meta charset='utf-8'>
-        //             <title>Casa do Códgo</title>
-        //         </head>
-        //         <body>
-        //             <h1>Casa do Códgo</h1>
-        //         </body>
-        //     </html>
-        // `;
-        // // responde a requisição
-        // resp.send(html)
     });
 
     // retorna a requisições GET  na rota '/livros'
@@ -69,7 +55,7 @@ module.exports = (app)=>{
 
            livro => resp.marko(
                require("../views/livros/form/form.marko"),
-               {livro,link:"/livros/update"}
+               {livro}
             )
         
         ).catch( erro => console.log(erro))
