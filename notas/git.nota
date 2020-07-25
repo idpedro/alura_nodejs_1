@@ -1,0 +1,17 @@
+#Criando repositorio remoto
+-> git init --bare
+## Isso vai dizer pra o git que esse e um repositorio puro
+
+#Adicionando repositorio
+-> git add remote nome-do-repositorio caminho/para/o/repositorio
+## esse caminho pode ser um servidor em rede, uma pasta,
+## qualquer caminho que seja um repositorio
+-> git remote [exibe o repositorios adicionados ]
+-> git remote rename origin local [renomendo repositorio]
+
+#Enviando arquivo para o repositorio
+-> git push nome-repositorio <branch>master
+
+# pega dados do repositorio remoto
+-> git pull repositorio <brench>master
+
