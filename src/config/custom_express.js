@@ -8,7 +8,7 @@ require('marko/express');  // chama o modulo pra o express
 
 // carega o modulo body-parser
 // serve para tranforma o corpo de uma requisição 
-// compativel com o nodede
+// compativel com o node
 const bodyParser = require('body-parser');
 
 // varega o methodOverride
